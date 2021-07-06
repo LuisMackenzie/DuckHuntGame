@@ -3,6 +3,7 @@ package com.mackenzie.duckhuntgame.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,8 +13,6 @@ import com.mackenzie.duckhuntgame.databinding.ActivityLoginBinding;
 public class LoginActivity extends AppCompatActivity {
 
     private ActivityLoginBinding binding;
-    // private EditText etNick;
-    // private Button btnStart;
     private String nick;
 
     @Override
@@ -25,6 +24,10 @@ public class LoginActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        // Ciambiar tipo de fiuiente
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "pixel.ttf");
+        binding.etNick.setTypeface(typeface);
+        binding.buttonStart.setTypeface(typeface);
 
         binding.buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
