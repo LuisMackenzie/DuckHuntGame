@@ -51,16 +51,26 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_timer"
-        app:layout_constraintEnd_toStartOf="@+id/tv_timer"
-        app:layout_constraintTop_toTopOf="@+id/tv_timer"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_timer_seg"
+        app:layout_constraintEnd_toStartOf="@+id/tv_timer_seg"
+        app:layout_constraintTop_toTopOf="@+id/tv_timer_seg"
         app:srcCompat="@drawable/ic_timer" />
 
     <TextView
-        android:id="@+id/tv_timer"
+        android:id="@+id/tv_timer_seg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="60s"
+        android:text="60."
+        app:layout_constraintBottom_toBottomOf="@+id/tv_timer_decims"
+        app:layout_constraintEnd_toStartOf="@+id/tv_timer_decims"
+        app:layout_constraintTop_toTopOf="@+id/tv_timer_decims"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timer_decims"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0s"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

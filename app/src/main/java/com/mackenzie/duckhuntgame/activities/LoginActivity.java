@@ -35,10 +35,11 @@ public class LoginActivity extends AppCompatActivity {
                 nick = binding.etNick.getText().toString();
 
                 if (nick.isEmpty()) {
-                    binding.etNick.setError("el niombre de usuario es obligatorio");
+                    binding.etNick.setError("el nimbre de usuario es obligatorio");
                 } else if(nick.length() < 3) {
-                    binding.etNick.setError("el niombre de usuario es obligatorio");
+                    binding.etNick.setError("el nimbre de usuario es obligatorio");
                 } else {
+                    binding.etNick.setText("");
                     Intent in = new Intent(LoginActivity.this, GameActivity.class);
                     in.putExtra(Constantes.EXTRA_NICK, nick);
                     startActivity(in);
