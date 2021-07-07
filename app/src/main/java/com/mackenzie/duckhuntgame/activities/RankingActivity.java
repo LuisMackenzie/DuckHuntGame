@@ -1,5 +1,6 @@
 package com.mackenzie.duckhuntgame.activities;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -19,7 +20,7 @@ import com.mackenzie.duckhuntgame.R;
 
 public class RankingActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
+    // private AppBarConfiguration appBarConfiguration;
     private ActivityRankingBinding binding;
 
     @Override

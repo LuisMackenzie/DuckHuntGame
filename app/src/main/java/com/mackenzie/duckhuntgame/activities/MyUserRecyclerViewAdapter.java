@@ -2,6 +2,7 @@ package com.mackenzie.duckhuntgame.activities;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,7 @@ public class MyUserRecyclerViewAdapter extends RecyclerView.Adapter<MyUserRecycl
 
         public ViewHolder(FragmentUserRankingBinding binding) {
             super(binding.getRoot());
+
             tvPosition = binding.tvPosition;
             tvDucks = binding.tvDucks;
             tvNick = binding.tvNick;

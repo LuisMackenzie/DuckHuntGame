@@ -1,6 +1,7 @@
 package com.mackenzie.duckhuntgame.activities;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -20,6 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.mackenzie.duckhuntgame.R;
+import com.mackenzie.duckhuntgame.databinding.FragmentUserRankingBinding;
 import com.mackenzie.duckhuntgame.models.User;
 
 import java.util.ArrayList;
@@ -33,6 +35,7 @@ public class UserRankingFragment extends Fragment {
     private MyUserRecyclerViewAdapter adapter;
     private FirebaseFirestore db;
     private RecyclerView recyclerView;
+    private FragmentUserRankingBinding binding;
 
     public UserRankingFragment() {
     }
@@ -53,15 +56,24 @@ public class UserRankingFragment extends Fragment {
 
         db = FirebaseFirestore.getInstance();
 
+        binding = FragmentUserRankingBinding.inflate(getLayoutInflater());
+
         if (getArguments() != null) {
             mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_user_ranking_list, container, false);
+
+        // Cambiar tipo de fuente
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "pixel.ttf");
+        binding.tvPosition.setTypeface(typeface);
+        binding.tvDucks.setTypeface(typeface);
+        binding.tvNick.setTypeface(typeface);
 
         // Set the adapter
         if (view instanceof RecyclerView) {
