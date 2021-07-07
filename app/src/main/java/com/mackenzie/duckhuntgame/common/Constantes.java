@@ -1,6 +1,7 @@
 package com.mackenzie.duckhuntgame.common;
 
 public class Constantes {
-    public final static String EXTRA_NICK = "nickname";
+    public static final String EXTRA_NICK = "nickname";
 
+    public static final String EXTRA_ID = "id";
 }

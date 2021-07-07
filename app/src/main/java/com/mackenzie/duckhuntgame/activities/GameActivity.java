@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.os.Handler;
 import android.view.Display;
 import android.view.View;
 
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.mackenzie.duckhuntgame.R;
 import com.mackenzie.duckhuntgame.common.Constantes;
 import com.mackenzie.duckhuntgame.databinding.ActivityGameBinding;
@@ -26,6 +28,8 @@ public class GameActivity extends AppCompatActivity {
     private Random aleatorio;
     private boolean gameOver = false;
     private CountDownTimer decimTimer;
+    private FirebaseFirestore db;
+    private String nick, id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +38,9 @@ public class GameActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         // Cambiar tipo de fuente
         setUpFonts();
-        // Recuperamos el nombre y lo ponemos en pantalla
-        Bundle bun = getIntent().getExtras();
-        String nick = bun.getString(Constantes.EXTRA_NICK);
-        binding.tvNick.setText(nick);
+        // instanciamos firestore
+        db = FirebaseFirestore.getInstance();
+
         eventosClick();
 
         initPantalla();
@@ -81,11 +84,18 @@ public class GameActivity extends AppCompatActivity {
                 decimTimer.cancel();
                 gameOver = true;
                 mostrarGameOver();
+                saveResult();
             }
         }.start();
 
 
 
+    }
+
+    private void saveResult() {
+        db.collection("users")
+                .document(id)
+                .update("ducks", count);
     }
 
     private void mostrarGameOver() {
@@ -104,10 +114,12 @@ public class GameActivity extends AppCompatActivity {
                 moveDuck();
             }
         });
-        builder.setNegativeButton("Salir", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Ver Ranking", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.dismiss();
-                finish();
+                Intent i = new Intent(GameActivity.this, RankingActivity.class);
+                startActivity(i);
+                // finish();
             }
         });
 
@@ -126,6 +138,8 @@ public class GameActivity extends AppCompatActivity {
         // inicializamos el objeto para generar numeros aleatorios
         aleatorio = new Random();
 
+
+
     }
 
     private void setUpFonts() {
@@ -135,6 +149,11 @@ public class GameActivity extends AppCompatActivity {
         binding.tvTimerSeg.setTypeface(typeface);
         binding.tvTimerDecims.setTypeface(typeface);
         binding.tvNick.setTypeface(typeface);
+        // Recuperamos el nombre y lo ponemos en pantalla
+        Bundle bun = getIntent().getExtras();
+        nick = bun.getString(Constantes.EXTRA_NICK);
+        id = bun.getString(Constantes.EXTRA_ID);
+        binding.tvNick.setText(nick);
     }
 
     private void eventosClick() {
