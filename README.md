@@ -1,6 +1,6 @@
-# Título del Proyecto
+# Duck Hunt Game
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Es un Juego en el que el jugador ha de tocar el maximo numero de patos antes de que se acabe el tiempo
 
 ## Comenzando 🚀
 
@@ -102,4 +102,4 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [Luis](https://luisbaez.tk/) 😊
