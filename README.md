@@ -2,92 +2,47 @@
 
 Es un Juego en el que el jugador ha de tocar el maximo numero de patos antes de que se acabe el tiempo
 
-## Comenzando 🚀
+## Getting Started 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+### Setup development environment 📋
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+* [Android Studio](https://developer.android.com/studio)
 
+* [Android SDK Tools](https://developer.android.com/studio#Other)
 
-### Pre-requisitos 📋
+### Build & Run the application 🔧
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+1. Get the source code.
 
 ```
-Da un ejemplo
+git clone --recursive https://github.com/LuisMackenzie/DuckHuntGame.git
 ```
 
-_Y repite_
+### Notice
 
-```
-hasta finalizar
-```
+To use the *Firebase Firestore DB feature* you need a *Firebase Project*:
+* To get one, follow the directions here: 
+* Once you have your key, replace the "NASA_API_KEY" string in these file: `app/src/main/java/com/mackenzie/nasaappmvp/Constantes.java`
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+To use the *Youtube API feature* you need a *Youtube API key*:
+* To get one, follow the directions here: https://developers.google.com/youtube/v3/getting-started
+* Once you have your key, replace the "YOUTUBE_APIKEY" string in these file: `app/src/main/java/com/mackenzie/nasaappmvp/Constantes.java`
 
-## Ejecutando las pruebas ⚙️
+## Built with 🛠️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+* [Android Studio](https://developer.android.com/studio) - The Android framework recomended by Google
+* [Gradle](https://gradle.org/) - Dependency manager
+* [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
+* [Glide](https://bumptech.github.io/glide/) - Glide is media management and image loading framework for Android
+* [PhotoView](https://github.com/Baseflow/PhotoView) - An easily usable implementation of a zooming Android ImageView.
+* [Youtube API](https://developers.google.com/youtube/v3) - Add YouTube functionality to your app
+* [NASA API](https://api.nasa.gov/) - Astronomy Picture of the Day (APOD) microservice
 
-### Analice las pruebas end-to-end 🔩
+## Autors ✒️
 
-_Explica que verifican estas pruebas y por qué_
+* **Luis Baez** - *Initial work* - [My Github](https://github.com/LuisMackenzie)
 
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
+<!--
 ## Licencia 📄
 
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
@@ -97,9 +52,9 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
-* etc.
+* etc.  -->
 
 
 
 ---
-⌨️ con ❤️ por [Luis](https://luisbaez.tk/) 😊
+⌨️ con ❤️ por [Luis Baez](https://github.com/LuisMackenzie) 😊
