@@ -22,7 +22,7 @@ git clone --recursive https://github.com/LuisMackenzie/DuckHuntGame.git
 
 ### Notice
 
-To use the *Firebase Firestore DB* you need to configure a firestore batabase in a *Firebase Project*:
+To use the *Firebase Firestore DB* you need to configure a Firestore DB in a *Firebase Project*:
 * Create a Cloud Firestore database
 * Add Firebase to your Android project. Follow the directions here: https://firebase.google.com/docs/android/setup
 * Set up your development environment adding the required dependencies
