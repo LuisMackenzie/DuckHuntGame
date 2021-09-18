@@ -1,6 +1,6 @@
 # Duck Hunt Game
 
-Es un Juego en el que el jugador ha de tocar el maximo numero de patos antes de que se acabe el tiempo
+It is a game that consists of touching the maximum number of ducks before time runs out
 
 ## Getting Started 🚀
 
@@ -20,23 +20,15 @@ git clone --recursive https://github.com/LuisMackenzie/DuckHuntGame.git
 
 ### Notice
 
-To use the *Firebase Firestore DB feature* you need a *Firebase Project*:
-* To get one, follow the directions here: 
-* Once you have your key, replace the "NASA_API_KEY" string in these file: `app/src/main/java/com/mackenzie/nasaappmvp/Constantes.java`
+To use the *Firebase Firestore DB feature* you need to configure a firestore batabase in a *Firebase Project*:
+* Follow the directions here: https://firebase.google.com/docs/firestore/quickstart
 
-To use the *Youtube API feature* you need a *Youtube API key*:
-* To get one, follow the directions here: https://developers.google.com/youtube/v3/getting-started
-* Once you have your key, replace the "YOUTUBE_APIKEY" string in these file: `app/src/main/java/com/mackenzie/nasaappmvp/Constantes.java`
 
 ## Built with 🛠️
 
 * [Android Studio](https://developer.android.com/studio) - The Android framework recomended by Google
 * [Gradle](https://gradle.org/) - Dependency manager
-* [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
-* [Glide](https://bumptech.github.io/glide/) - Glide is media management and image loading framework for Android
-* [PhotoView](https://github.com/Baseflow/PhotoView) - An easily usable implementation of a zooming Android ImageView.
-* [Youtube API](https://developers.google.com/youtube/v3) - Add YouTube functionality to your app
-* [NASA API](https://api.nasa.gov/) - Astronomy Picture of the Day (APOD) microservice
+* [Firebase Firestore](https://firebase.google.com/?hl=es) - Flexible, scalable, cloud-based firebase NoSQL database
 
 ## Autors ✒️
 
@@ -57,4 +49,4 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 
 ---
-⌨️ con ❤️ por [Luis Baez](https://github.com/LuisMackenzie) 😊
+⌨️ with ❤️ by [Luis Baez](https://github.com/LuisMackenzie) 😊
