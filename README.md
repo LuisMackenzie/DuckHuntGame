@@ -31,7 +31,7 @@ To use the *Firebase Firestore DB* you need to configure a Firestore DB in a *Fi
 ## Built with 🛠️
 
 * [Android Studio](https://developer.android.com/studio) - The Android framework recomended by Google
-* [Gradle](https://gradle.org/) - Dependency manager
+* [Gradle](https://gradle.org/) - Gradle, is a tool and dependency manager that allows open source compilation automation, which is focused on flexibility and performance
 * [Firebase Firestore](https://firebase.google.com/?hl=es) - Flexible, scalable, cloud-based firebase NoSQL database
 
 ## Autors ✒️
