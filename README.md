@@ -23,6 +23,7 @@ It is a game that consists of touching the maximum number of ducks before time r
 ```
 git clone --recursive https://github.com/LuisMackenzie/DuckHuntGame.git
 ```
+2. Or get apk [here](https://github.com/LuisMackenzie/DuckHuntGame/raw/master/DuckHuntGame.apk)
 
 ### Notice
 
