@@ -2,6 +2,11 @@
 
 It is a game that consists of touching the maximum number of ducks before time runs out
 
+| <img src="docs_resources/home.png"> | <img src="docs_resources/game_over.png"> | <img src="docs_resources/ranking_list.png"> |
+| ---------------------------------------------- | -------------------------------------------- | ------------------------------------------- |
+| <img src="docs_resources/duck01.png"> | <img src="docs_resources/duck02.png"> | <img src="docs_resources/duck04.png"> |
+| ---------------------------------------------- | -------------------------------------------- | ------------------------------------------- |
+
 ## Getting Started 🚀
 
 ### Setup development environment 📋
